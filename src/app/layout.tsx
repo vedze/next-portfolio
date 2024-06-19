@@ -23,9 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${pretendard.variable}`}>
-      <body className={pretendard.className}>
+      <body
+        className={`${pretendard.className} flex flex-col w-full max-w-screen-2xl mx-auto`}
+      >
         <Header />
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
