@@ -6,8 +6,8 @@ export default function SideBar() {
       <div className="text-center text-xs text-gray-500">
         last updated: 2024.06.20
       </div>
-      <nav className="flex flex-col flex-1 justify-center pr-4 gap-10 text-right">
-        <Link href="/">Hello</Link>
+      <nav className="flex flex-col flex-1 justify-center px-1 gap-10 text-right">
+        <Link href="/">Intro</Link>
         <Link href="/about">About</Link>
         <Link href="/projects">Projects</Link>
         <Link href="/contact">Contact & FeedBack</Link>
