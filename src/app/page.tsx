@@ -1,13 +1,17 @@
 import Image from "next/image";
+import AboutPage from "./about/page";
+import ProjectsPage from "./projects/page";
+import ContactPage from "./contact/page";
+import Intro from "./intro/page";
+import IntroPage from "./intro/page";
 
 export default function Home() {
   return (
-    <section className="p-4">
-      <div className="text-xl">
-        이상을 꿈꾸는 개발자
-        <br />
-        <span className="font-bold">이지은</span> 입니다
-      </div>
+    <section className="p-20">
+      <IntroPage />
+      <AboutPage />
+      <ProjectsPage />
+      <ContactPage />
     </section>
   );
 }
