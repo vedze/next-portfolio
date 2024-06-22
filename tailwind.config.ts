@@ -8,13 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // backgroundImage: {
+      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      //   "gradient-conic":
+      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // },
+      fontFamily: {
+        nanumRg: ["NanumSquareRg", "sans-serif"],
+        nanumBd: ["NanumSquareBd", "sans-serif"],
+        wavePado: ["WavvePADO-Regular", "sans-serif"],
+      },
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        p_green: "#8DAA77", // point color
+        t_gray: "#AEAEAE", // text gray (sidebar)
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
 export default config;

@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
+import Footer from "@/components/Footer";
+import SideBar from "@/components/SideBar";
 
-const inter = Inter({ subsets: ["latin"] });
+const pretendard = localFont({
+  src: "../fonts/PretendardVariable.woff2",
+  display: "swap",
+  weight: "45 920",
+  variable: "--font-pretendard",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ko" className={`${pretendard.variable} scrollbar-hide`}>
+      <body className={`${pretendard.className}`}>
+        <div className="flex">
+          <main className="flex-1 bg-amber-50">{children}</main>
+          <div className="flex-none">
+            <SideBar />
+          </div>
+        </div>
+        <Footer />
+      </body>
     </html>
   );
 }
