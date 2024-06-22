@@ -21,15 +21,11 @@ const config: Config = {
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        bg_color: "#FCFBFA",
-        tx_color: {
-          "point-green": "#8DAA77", // point_text_green
-          "menu-gray": "#AEAEAE", // menu_text_gray
-          DEFAULT: "#000000", // normal_text_black
-        },
+        p_green: "#8DAA77", // point color
+        t_gray: "#AEAEAE", // text gray (sidebar)
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
 export default config;
