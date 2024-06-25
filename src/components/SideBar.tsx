@@ -4,7 +4,7 @@ export default function SideBar() {
   return (
     <div className="flex flex-col items-center h-screen p-2 bg-orange-100">
       <div className="text-center text-xs text-t_gray">
-        last updated: 2024.06.22
+        last updated: 2024.06.25
       </div>
       <nav className="flex flex-col flex-1 justify-center px-1 gap-10 text-right">
         <Link href="/">Intro</Link>
